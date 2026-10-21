@@ -1,0 +1,494 @@
+@media (max-width: 1024px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .aside-bar {
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 254px !important;
+    padding: 24px !important;
+    z-index: 1000;
+  }
+
+  .aside-bar .header-title,
+  .aside-bar .protcol,
+  .aside-service p,
+  .aside-active p,
+  .aside-1 p {
+    display: flex !important;
+  }
+
+  .container {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .inner-container {
+    margin-right: 254px !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    width: calc(100% - 254px) !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .div-header {
+    padding: 16px 16px 0;
+  }
+
+  .parent,
+  .parent-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding-inline: 16px !important;
+    padding-top: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .div1, .div2, .div3, .div4, .div5,
+  .div6, .div7, .div8, .div9, .div10 {
+    grid-area: auto !important;
+    max-width: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .div9-container,
+  .credit-cards,
+  .credit-card-container,
+  .account-summary-cards,
+  .account-summary-card,
+  .div10-cards,
+  .div6-container,
+  .stats-chars {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .credit-card-container {
+    height: auto !important;
+    aspect-ratio: 342 / 207 !important;
+  }
+
+  .div5 {
+    overflow: hidden;
+  }
+
+  .div5 table {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .div5 thead tr,
+  .div5 tbody tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) 78px 80px 44px minmax(0, 0.8fr);
+    column-gap: 6px;
+    align-items: center;
+    padding-inline: 0;
+  }
+
+  .div5 th,
+  .div5 td {
+    padding: 0;
+    min-width: 0;
+    flex: none;
+    overflow-wrap: anywhere;
+  }
+
+  .div5 td:nth-child(2),
+  .div5 td:nth-child(3),
+  .div5 td:nth-child(4),
+  .div5 th:nth-child(2),
+  .div5 th:nth-child(3),
+  .div5 th:nth-child(4) {
+    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+
+  .div5 th,
+  .div5 td,
+  .div5 .table-name,
+  .div5 .table-use,
+  .div5 .transaction-date,
+  .div5 .transaction-completed,
+  .div5 .transaction-pending,
+  .div5 .transaction-price,
+  .div5 .income p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .div5 .transaction-date,
+  .div5 .income p {
+    white-space: nowrap;
+  }
+
+  .div5 .cell-details {
+    gap: 6px;
+    align-items: center;
+  }
+
+  .div5 .pfp,
+  .div5 .table-pfp-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .div5 .table-pfp-icon img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .div5 .income {
+    padding-inline: 5px;
+    gap: 0;
+    width: fit-content;
+  }
+
+  .div5 .income img {
+    display: none;
+  }
+
+  .item {
+    min-width: 0;
+  }
+
+  .stats-chars {
+    gap: 12px;
+  }
+
+  .account-summary-card {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .aside-bar {
+    display: none !important;
+  }
+
+  .container {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .inner-container {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .div-header {
+    padding: 12px 12px 0;
+  }
+
+  .header {
+    padding: 16px;
+  }
+
+  .header-content {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    row-gap: 16px;
+    width: 100%;
+    direction: rtl;
+  }
+
+  .header-left {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    direction: rtl;
+    justify-content: flex-start !important;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .logo {
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .header-title {
+    order: 2;
+    text-align: right;
+  }
+
+  .header-title h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .header-title p {
+    font-size: 12px;
+  }
+
+  .connected {
+    display: none !important;
+  }
+
+  .header-right {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex !important;
+    width: 100%;
+    gap: 0;
+  }
+
+  .header-buttons {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .notify {
+    order: 1 !important;
+    direction: rtl;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .special-acc {
+    order: 2 !important;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  }
+
+  .special-name {
+    display: none !important;
+  }
+
+  .special-pfp img {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .search,
+  .notification {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    border: 1px #e1e2e4 solid;
+  }
+
+  .search img,
+  .notification img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .notification-count p {
+    top: -8px;
+    left: auto;
+    right: -6px;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 1px 5px;
+  }
+
+  .header-content::after {
+    content: "● متصل";
+    grid-row: 3;
+    grid-column: 1;
+    width: 100%;
+    height: 40px;
+    background-color: #f0fdf4;
+    border: 1px solid #dbfce7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .parent,
+  .parent-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px;
+    padding-inline: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100% !important;
+  }
+
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .div1, .div2, .div3 {
+    padding: 20px;
+  }
+
+  .div4, .div5, .div6, .div7,
+  .div8, .div9, .div10 {
+    padding: 16px;
+  }
+
+  .div5 {
+    padding: 12px;
+    overflow: hidden;
+  }
+
+  .div5 table {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .div5 tr {
+    padding: 12px 0;
+    align-items: center;
+  }
+
+  .div5 th,
+  .div5 td {
+    padding: 0 3px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .div5 thead tr,
+  .div5 tbody tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) 78px 80px 44px minmax(0, 0.8fr);
+    column-gap: 6px;
+    align-items: center;
+    padding-inline: 0;
+  }
+
+  .div5 th,
+  .div5 td {
+    padding: 0;
+    min-width: 0;
+    flex: none;
+    overflow-wrap: anywhere;
+  }
+
+  .div5 td:nth-child(2),
+  .div5 td:nth-child(3),
+  .div5 td:nth-child(4),
+  .div5 th:nth-child(2),
+  .div5 th:nth-child(3),
+  .div5 th:nth-child(4) {
+    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+
+  .div5 th,
+  .div5 td,
+  .div5 .table-name,
+  .div5 .table-use,
+  .div5 .transaction-date,
+  .div5 .transaction-completed,
+  .div5 .transaction-pending,
+  .div5 .transaction-price,
+  .div5 .income p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .div5 .transaction-date,
+  .div5 .income p {
+    white-space: nowrap;
+  }
+
+  .div5 .cell-details {
+    gap: 6px;
+    align-items: center;
+  }
+
+  .div5 .pfp,
+  .div5 .table-pfp-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .div5 .table-pfp-icon img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .div5 .income {
+    padding-inline: 5px;
+    gap: 0;
+    width: fit-content;
+  }
+
+  .div5 .income img {
+    display: none;
+  }
+
+  .div9-container,
+  .credit-cards {
+    width: 100%;
+    align-items: center;
+  }
+
+  .credit-card-container {
+    width: 100%;
+    max-width: 342px;
+    height: auto;
+    aspect-ratio: 342 / 207;
+  }
+
+  .item {
+    min-width: 0;
+  }
+
+  .stats-chars {
+    gap: 12px;
+  }
+
+  .account-summary-card {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 380px) {
+  .header {
+    padding: 12px;
+  }
+
+  .header-title h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .special-pfp img {
+    width: 46px;
+    height: 46px;
+  }
+}
